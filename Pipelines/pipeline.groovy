@@ -22,7 +22,8 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
-            bat "C:/My-D/apache-jmeter-5.4.1/bin/jmeter.bat -n -t Facility-Managment-Perf-git.jmx -l result-Facility-Managment-Perf-git.jtl //-Joptestvalue=${octoperf_test_value}"
+            bat "C:/My-D/apache-jmeter-5.4.1/bin/jmeter.bat -n -t Facility-Managment-Perf-git.jmx -l result-Facility-Managment-Perf-git.jtl 
+            //Joptestvalue=${octoperf_test_value}"
         }
     }
 
